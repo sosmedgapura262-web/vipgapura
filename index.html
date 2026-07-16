@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upgrade VVIP | GAPURABOLA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <div class="logo">SISTEM PUSAT WEBSITE GAPURABOLA</div>
+
+  <!-- FORM -->
+  <div class="card" id="formCard">
+    <h1 class="title">GAPURABOLA<br>UPGRADE AKUN VVIP</h1>
+    <p class="subtitle">Layanan eksklusif & prioritas tertinggi member</p>
+
+    <div class="badge">VVIP MEMBER</div>
+
+    <input id="username" placeholder="Username Member">
+    <input id="namarek" placeholder="Nama Rekening">
+    <input id="norek" placeholder="Nomor Rekening">
+
+    <button onclick="startUpgrade()">UPGRADE SEKARANG</button>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="card hidden" id="processCard">
+    <h2 class="secure">🔒 Secure Server Verification</h2>
+    <p class="small">Memverifikasi data & status akun</p>
+
+    <div class="progress">
+      <div class="bar" id="bar"></div>
+    </div>
+
+    <p class="loading" id="loadingText">Initializing...</p>
+  </div>
+
+  <!-- SUCCESS -->
+  <div class="card success hidden" id="successCard">
+    <div class="check">✔</div>
+    <h2>VVIP ACTIVATED</h2>
+
+    <div class="vip-box">
+      🏆 PRIORITY VVIP ACCESS ENABLED
+    </div>
+
+    <p class="next" id="welcomeText"></p>
+
+    <!-- MANFAAT VVIP -->
+    <div class="vvip-benefits">
+      <h3>🚀 Keuntungan Eksklusif VVIP</h3>
+      <ul>
+        <li>Mudah Mendapatkan Scatter<br><small>Peluang bonus & free spin lebih sering muncul</small></li>
+        <li>Main dengan Pecahan Bagus<br><small>Taruhan optimal untuk hasil maksimal</small></li>
+        <li>Sering Mendapatkan JACKPOT<br><small>Kesempatan jackpot lebih tinggi & eksklusif</small></li>
+        <li>Pasti Bisa Wede Berkali-Kali<br><small>Withdraw cepat & limit tinggi</small></li>
+      </ul>
+    </div>
+
+    <a href="https://gapuraone.com/" target="_blank" class="chat-btn">
+      HUBUNGI LIVE CHAT
+    </a>
+  </div>
+
+  <div class="legal">
+    🔐 Sistem resmi pengajuan peningkatan status akun member GAPURABOLA.<br>
+    Aktivasi VVIP dilakukan melalui verifikasi manual Live Chat resmi.
+  </div>
+
+  <div class="footer">
+    © 2026 GAPURABOLA • Premium Member Upgrade System
+  </div>
+
+</div>
+
+<audio id="successSound" src="success.mp3" preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
