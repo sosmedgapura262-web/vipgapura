@@ -1,201 +1,163 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upgrade VVIP | GAPURABOLA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UPGRADE VVIP MEMBER</title>
 
-    <link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{
+background:#111;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+color:#fff;
+}
+.card{
+width:100%;
+max-width:430px;
+background:#1c1c1c;
+border:1px solid gold;
+border-radius:18px;
+padding:25px;
+box-shadow:0 0 25px rgba(255,215,0,.15);
+}
+.logo{
+text-align:center;
+color:gold;
+font-weight:bold;
+margin-bottom:15px;
+}
+.demo{
+text-align:center;
+font-size:12px;
+background:#333;
+padding:6px;
+border-radius:30px;
+margin-bottom:15px;
+}
+h2{
+text-align:center;
+margin-bottom:20px;
+color:gold;
+}
+input{
+width:100%;
+padding:13px;
+margin-bottom:12px;
+border:none;
+border-radius:10px;
+background:#2c2c2c;
+color:#fff;
+}
+button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:gold;
+color:#111;
+font-weight:bold;
+cursor:pointer;
+}
+.result{
+display:none;
+margin-top:20px;
+background:#222;
+padding:18px;
+border-radius:12px;
+border:1px solid gold;
+}
+.result h3{
+color:gold;
+margin-bottom:10px;
+}
+.link{
+display:block;
+margin-top:18px;
+text-align:center;
+background:gold;
+color:#111;
+padding:12px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+}
+.note{
+font-size:12px;
+opacity:.8;
+margin-top:15px;
+text-align:center;
+}
+</style>
 </head>
+
 <body>
 
-<div class="app">
+<div class="card">
 
-    <div class="logo">
-        SISTEM PUSAT WEBSITE GAPURABOLA
-    </div>
+<div class="logo">GAPURABOLA</div>
 
-    <!-- FORM -->
-    <div class="card" id="formCard">
+<div class="demo">DATA LENGKAP UPGRADE VVIP</div>
 
-        <h1 class="title">
-            GAPURABOLA<br>
-            UPGRADE AKUN VVIP
-        </h1>
+<h2>DATA LENGKAP UPGRADE VVIP</h2>
 
-        <p class="subtitle">
-            Layanan eksklusif & prioritas tertinggi member
-        </p>
+<input id="username" placeholder="Username Member">
+<input id="namarek" placeholder="Nama Rekening">
+<input id="norek" placeholder="Nomor Rekening">
 
-        <div class="badge">
-            VVIP MEMBER
-        </div>
+<button onclick="lihatDemo()">UPGRADE SEKARANG</button>
 
-        <input
-            type="text"
-            id="username"
-            placeholder="Username Member">
+<div class="result" id="hasil">
 
-        <input
-            type="text"
-            id="namarek"
-            placeholder="Nama Rekening">
+<h3>Informasi yang Diisi</h3>
 
-        <input
-            type="text"
-            id="norek"
-            placeholder="Nomor Rekening">
+<p id="userText"></p>
+<p id="namaText"></p>
+<p id="rekText"></p>
 
-        <button id="upgradeBtn">
-            UPGRADE SEKARANG
-        </button>
+<br>
 
-    </div>
+<p><b>Benefit Member VVIP</b></p>
+<ul style="margin-left:18px;line-height:1.8">
+<li>Mudah Mendapatkan Scatter<br><small>Peluang Bonus & Free Spin Lebih Mudah Didapatkan</li>
+<li>Main Dengan Pecahan Bagus<br><small>Taruhan Optimal Untuk Hasil Maksimal</li>
+<li>Sering Mendapatkan Jackpot<br><small>Kesempatan Jackpot Lebih Tinggi & Eksklusif</li>
+<li>Pasti Bisa Wede Berkali-Kali<br><small>Withdraw Cepat & Limit Tinggi</li>
+</ul>
 
-    <!-- PROCESS -->
-    <div class="card hidden" id="processCard">
-
-        <h2 class="secure">
-            🔒 Secure Server Verification
-        </h2>
-
-        <p class="small">
-            Memverifikasi data & status akun
-        </p>
-
-        <div class="progress">
-            <div class="bar" id="bar"></div>
-        </div>
-
-        <p class="loading" id="loadingText">
-            Initializing...
-        </p>
-
-    </div>
-
-    <!-- SUCCESS -->
-    <div class="card success hidden" id="successCard">
-
-        <div class="check">✔</div>
-
-        <h2>VVIP ACTIVATED</h2>
-
-        <div class="vip-box">
-            🏆 PRIORITY VVIP ACCESS ENABLED
-        </div>
-
-        <p class="next" id="welcomeText"></p>
-
-        <div class="vvip-benefits">
-
-            <h3>🚀 Keuntungan Eksklusif VVIP</h3>
-
-            <ul>
-                <li>
-                    Mudah Mendapatkan Scatter
-                    <br>
-                    <small>Peluang bonus & free spin lebih sering muncul</small>
-                </li>
-
-                <li>
-                    Main dengan Pecahan Bagus
-                    <br>
-                    <small>Taruhan optimal untuk hasil maksimal</small>
-                </li>
-
-                <li>
-                    Sering Mendapatkan JACKPOT
-                    <br>
-                    <small>Kesempatan jackpot lebih tinggi & eksklusif</small>
-                </li>
-
-                <li>
-                    Pasti Bisa WD Berkali-Kali
-                    <br>
-                    <small>Withdraw cepat & limit tinggi</small>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <a
-            href="https://gapurabow.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="chat-btn">
-
-            HUBUNGI LIVE CHAT
-
-        </a>
-
-    </div>
-
-    <div class="legal">
-        🔐 Sistem resmi pengajuan peningkatan status akun member GAPURABOLA.<br>
-        Aktivasi VVIP dilakukan melalui verifikasi manual Live Chat resmi.
-    </div>
-
-    <div class="footer">
-        © 2026 GAPURABOLA • Premium Member Upgrade System
-    </div>
+<a class="link" href="https://gapurabow.com/" target="_blank" rel="noopener noreferrer">
+Hubungi Live Chat
+</a>
 
 </div>
 
-<audio id="successSound" preload="auto">
-    <source src="success.mp3" type="audio/mpeg">
-</audio>
+<div class="note">
+🔐 Sistem resmi pengajuan peningkatan status akun member GAPURABOLA.
+Aktivasi VVIP dilakukan melalui verifikasi manual Live Chat resmi.
+    </div>
+
+<div class="footer">
+    © 2026 GAPURABOLA • Premium Member Upgrade System
+  </div>   
+
+</div>
 
 <script>
-document.getElementById("upgradeBtn").addEventListener("click", startUpgrade);
+function lihatDemo(){
 
-function startUpgrade() {
+const username=document.getElementById("username").value || "-";
+const nama=document.getElementById("namarek").value || "-";
+const norek=document.getElementById("norek").value || "-";
 
-    document.getElementById("formCard").classList.add("hidden");
-    document.getElementById("processCard").classList.remove("hidden");
+document.getElementById("userText").innerHTML="<b>Username :</b> "+username;
+document.getElementById("namaText").innerHTML="<b>Nama Rekening :</b> "+nama;
+document.getElementById("rekText").innerHTML="<b>Nomor Rekening :</b> "+norek;
 
-    const loading = document.getElementById("loadingText");
-    const bar = document.getElementById("bar");
-
-    const steps = [
-        "Menghubungkan ke server...",
-        "Memverifikasi username...",
-        "Memeriksa rekening...",
-        "Mengaktifkan VVIP...",
-        "Selesai..."
-    ];
-
-    let i = 0;
-
-    const timer = setInterval(() => {
-
-        bar.style.width = ((i + 1) * 20) + "%";
-        loading.textContent = steps[i];
-
-        i++;
-
-        if (i >= steps.length) {
-
-            clearInterval(timer);
-
-            document.getElementById("processCard").classList.add("hidden");
-            document.getElementById("successCard").classList.remove("hidden");
-
-            const username =
-                document.getElementById("username").value || "Member";
-
-            document.getElementById("welcomeText").textContent =
-                "Selamat " + username + ", akun Anda berhasil di-upgrade menjadi VVIP.";
-
-            const sound = document.getElementById("successSound");
-
-            if (sound) {
-                sound.play().catch(() => {});
-            }
-
-        }
-
-    }, 900);
+document.getElementById("hasil").style.display="block";
 
 }
 </script>
