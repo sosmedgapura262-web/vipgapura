@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #2a220f, #000);
+  color: #fff;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 16px;
+  max-width: 420px;
+  margin: auto;
+}
+
+.logo {
+  text-align: center;
+  margin: 12px 0;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.card {
+  background: linear-gradient(145deg, #1b1608, #2a220f);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 0 35px rgba(212,175,55,0.45);
+  animation: fade 0.4s ease;
+}
+
+.hidden { display: none; }
+
+.title {
+  text-align: center;
+  color: #d4af37;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.badge {
+  margin: 14px auto;
+  padding: 10px 22px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #d4af37, #b8962e);
+  color: #1a1405;
+  font-weight: 800;
+  text-align: center;
+  animation: glow 1.5s infinite alternate;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background: #0f0c05;
+  color: #fff;
+}
+
+button, .chat-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #d4af37, #b8962e);
+  color: #1a1405;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.progress {
+  background: #120e05;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 14px;
+  margin: 20px 0;
+}
+
+.bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #d4af37, #b8962e);
+  transition: width 0.4s;
+}
+
+.success { text-align: center; }
+
+.check {
+  font-size: 52px;
+  color: #d4af37;
+}
+
+.vip-box {
+  margin: 14px 0;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d4af37;
+}
+
+.vvip-benefits {
+  margin: 16px 0;
+  text-align: left;
+  background: rgba(212,175,55,0.08);
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.vvip-benefits h3 {
+  text-align: center;
+  color: #d4af37;
+}
+
+.vvip-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vvip-benefits li {
+  margin: 10px 0;
+}
+
+.legal, .footer {
+  text-align: center;
+  font-size: 11px;
+  opacity: 0.75;
+  margin-top: 14px;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #d4af37; }
+  to { box-shadow: 0 0 30px #d4af37; }
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; }
+}
